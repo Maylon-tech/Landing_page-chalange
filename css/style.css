@@ -1,0 +1,430 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    height: 84px;
+    align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+/* header LOGO */
+
+.header.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.header .logo span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #222;
+}
+.header .logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.header .content {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+/* Navigation  */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar a {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+    margin: 0px 12px;
+    transition: all .5s ease;
+}
+.navbar a:hover {
+    border-bottom: 1px solid gray;
+}
+/* Nav Buttons */
+
+.nav-button {
+    padding: 10px;
+    margin-right: 25px;
+}
+.nav-button #btn-entrar {
+    padding: 8px;
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    color: #555;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.nav-button #btn-entrar:hover {
+    color: darkred;
+    font-weight: bold;
+}
+.nav-button #btn-cadastrar {
+    padding: 12px 16px;
+    border-radius: 10px;
+    background-color: darkred;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.nav-button #btn-cadastrar:hover {
+    background-color: rgb(141, 58, 58);
+}
+
+.home-content {
+    width: 1440px;
+    height: 407px;
+    padding: 76px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0px;
+}
+.home-content span {
+    color: darkred;
+    margin-bottom: 45px;
+    font-size: 23px;
+}
+.home-content h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-content p {
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Section - Metricas */
+
+.metrica {
+    max-width: 1440px;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.metrica .content {
+    width: 1160px;
+    display: flex;
+    height: 100%;
+}
+.metrica .content .content-block {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.metrica .content .content-block span {
+    font-size: 2.7em;
+    color: rgb(151, 10, 10);
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.metrica .content .content-block .item-text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 10px;
+    align-items: center;
+    justify-content:center;
+}
+.metrica .content .content-block .item-text h3 {
+    margin-bottom: 8px;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.metrica .content .content-block .item-text p {
+    font-size: 0.8em;
+    text-align: center;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Section - Vagas */
+
+.vagas {
+    max-width: 1440px;
+    height: 1298px;
+    padding: 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vagas .talentos-content {
+    width: 1280px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.vagas .container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1280px;
+    height: 138px;
+}
+.vagas .container-text span {
+    color: rgb(150, 25, 25);
+    font-weight: 600;
+}
+.vagas .container-text h1 {
+    font-size: 2em;
+}
+.vagas .container-text p {
+    color: #333;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+
+.vagas .talentos-content .container-img {
+    width: 1216px;
+    height: 400px;   
+    
+}
+.vagas .talentos-content .container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+/* Vagas Abertas div */
+
+.vagas .vagas-abertas {
+    width: 1280px;
+    height: 940px;
+    margin: 0 auto;
+}
+.content-jobs {
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.content-top {
+    width: 50%;
+    height: 30%;
+}
+.content-top h2 {
+    margin-bottom: 35px;
+    color: #222;
+}
+.content-items {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+}
+.content-items .item {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.content-items .item h3 {
+    margin-bottom: 20px;
+}
+.content-items .item .item-info {
+    width: 70%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    color: #555;
+}
+.content-items .item .item-info h4 {
+    font-weight: 500;
+}
+
+.content-down {
+    width: 50%;
+    height: 60%;
+}
+.content-down h2 {
+    margin-bottom: 35px;
+    color: #222;
+}
+ 
+ /* Depoimento sectoin */
+
+ .depoimento {
+    width: 1300px;
+    height: 500px;
+    padding-bottom: 96px;
+}
+.container-center {
+    width: 1280px;
+    height: 404px;
+    margin: 0 auto;
+    padding: 0px 32px;
+}
+.content-color {
+    width: 1216px;
+    height: 404px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(243, 193, 228, 0.733);
+}
+.content-color .container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+}
+.content-color .container-text span {
+    color: red;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.content-color .container-text h1 {
+    font-size: 2em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-color .atributo-text {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content-color .atributo-text img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid rgb(102, 102, 209);
+}
+.content-color .atributo-text .text-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-color .atributo-text .text-avatar h2 {
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 0;
+}
+.content-color .atributo-text .text-avatar span {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+/*  FORMULARIO SECTION  */
+
+.formulario {
+    width: 1440px;
+    height: 430px;
+    padding: 96px 0px;
+    background-color: rgba(249, 250, 251, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formulario span {
+    margin-top: 50px;
+}
+.input-cadastro {
+    width: 832px;
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 32px;
+}
+.content-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content-cadastro .cadastros-text {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.content-cadastro .cadastros-text h1 {
+    font-size: 2.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+.content-cadastro .cadastros-text h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #444;
+}
+
+.content-cadastro .input-btn {
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.content-cadastro .input-btn input {
+    padding: 20px;
+    width: 280px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #888;
+    font-size: 1.2em;
+}
+.content-cadastro .input-btn .botao {
+    color: #fff;
+    background-color: crimson;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.2em;
+    margin-left: 15px;
+    padding: 20px 35px;
+    width: 150px;
+    transition: .6s ;
+}
+.content-cadastro .input-btn .botao:hover {
+    background-color: brown;
+}
